@@ -3,7 +3,7 @@
 
 ## 1. Download the Visual Studio Code
 
-Here is the link to download the VScode: https://code.visualstudio.com/
+Here is the link to download the VScode:[VScode Downloading](https://code.visualstudio.com/)
 ![Image](window.png)
 <br><br>
 After downloading the VScode, you could see the window, then you are done with the first step!
@@ -12,7 +12,7 @@ After downloading the VScode, you could see the window, then you are done with t
 <br><br><br><br>
 
 ## 2. Connect to Accounts
-You could look up your all your UCSD account here: https://sdacs.ucsd.edu/~icc/index.php
+You could look up your all your UCSD account here: [Account Lookup](https://sdacs.ucsd.edu/~icc/index.php)
 
 Then you should change your CSE 15L account password and wait for up to 40 mins.
 
@@ -79,7 +79,7 @@ Next:Log into ieng6 with ssh again, and use ls command. You should see the file 
 
 <br>
 
-**<h3>Here is a sample of the whole process:<h3>**
+**Here is a sample of the whole process:**
 
 ![Image](sample2.png)
 

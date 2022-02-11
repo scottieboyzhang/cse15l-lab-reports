@@ -24,4 +24,5 @@ Host ieng6
 * Using ls to check the current file in ieng6 account
 * Using scp the copy a java file into ieng6 account
 * Using ls again to check the file is successfully copied
+
 ![Image](scpieng6.png)

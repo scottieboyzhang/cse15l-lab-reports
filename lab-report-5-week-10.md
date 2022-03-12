@@ -17,9 +17,10 @@ The newly created file is results.txt which saves output of bash scipt, containi
 ## TestFile 342.md
 
  342.md Markdown file content:
+
  ![Image](342.png)
 
-Joe’s result: []
+Other's result: []
 
 My results:[/foo`] 
 
@@ -28,18 +29,21 @@ According to ![CommonMark](https://spec.commonmark.org/dingus/?text=%5Bnot%20a%2
 
 ![Image](342w.png)
 
-I think the program should return an empty list. I think my implementation is not correct because in my markdownparse file I dont check the forward slash and backtick symbol. To debug, we can look for forward slash or backticks after looking for brackets.
+I think the program should return an empty list since the existence of forward slash and backticks can influence the link. I think my implementation is not correct because in my markdownparse file I dont check the forward slash and backtick symbol. To debug, we can look for forward slash or backticks after looking for brackets.
 
+<br><br><br>
 
 ## TestFile 192.md
 
 192.md Markdown file content:
 ```
-[cs15lwi22ale@ieng6-203]:~:243$ cat markdown-parsee/markdown-parse/test-files/192.md
+[cs15lwi22ale@ieng6-201]:~:243$ cat markdown-parsee/markdown-parse/test-files/192.md
 [foo]: /url "title"
 
 [foo]
 ```
+
+My result v.s Other's result:
 
 ```
 212c212
@@ -48,5 +52,5 @@ I think the program should return an empty list. I think my implementation is no
 > [url]
 ```
 
-I think the correct implmentation is that empty link will be returned, so my implementation is correct. Here the bug is that the other implementation recognizes "url" as a link. In order to fix this issue we could simply add an if statement to look for forward slash and the parentheses.
+I think the correct implmentation is that empty link will be returned, since the existence can influence brackets and parentheses, so my implementation is correct. Here the bug is that the other implementation recognizes "url" as a link and ignore the existence of the forward slash sign. In order to fix this issue we could simply add an if statement to look for forward slash and the parentheses.
 
